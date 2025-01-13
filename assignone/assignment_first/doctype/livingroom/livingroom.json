@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-01-13 16:05:25.734443",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_txjw",
+  "house_number",
+  "street_name",
+  "locality",
+  "city",
+  "state",
+  "country",
+  "pin_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_txjw",
+   "fieldtype": "Section Break",
+   "label": "Address Details"
+  },
+  {
+   "default": "#1234",
+   "fieldname": "house_number",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "House Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "street_name",
+   "fieldtype": "Data",
+   "label": "Street Name"
+  },
+  {
+   "depends_on": "eval:doc.street_name;",
+   "fieldname": "locality",
+   "fieldtype": "Data",
+   "label": "Locality"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "City",
+   "reqd": 1
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "State",
+   "reqd": 1
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Country",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pin_code",
+   "fieldtype": "Data",
+   "label": "Pin Code",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-01-13 17:39:31.441744",
+ "modified_by": "Administrator",
+ "module": "Assignment_First",
+ "name": "livingroom",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
