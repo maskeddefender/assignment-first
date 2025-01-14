@@ -6,3 +6,8 @@
 
 // 	},
 // });
+
+if (!frm.doc.description) {
+    frm.set_intro('Please set the value of description', 'blue');
+}
+
