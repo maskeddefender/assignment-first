@@ -1,75 +1,51 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:first_name",
- "creation": "2025-01-13 16:10:50.733168",
+ "autoname": "field:city",
+ "creation": "2025-01-14 14:13:21.159978",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_neig",
+  "section_break_3qsc",
   "amended_from",
-  "first_name",
-  "last_name",
-  "full_name",
-  "phone_number",
-  "date_time"
+  "city",
+  "pin_code"
  ],
  "fields": [
   {
-   "fieldname": "section_break_neig",
+   "fieldname": "section_break_3qsc",
    "fieldtype": "Section Break",
-   "label": "Name and Phone"
+   "label": "City and Pin"
   },
   {
    "fieldname": "amended_from",
    "fieldtype": "Link",
    "label": "Amended From",
    "no_copy": 1,
-   "options": "phones",
+   "options": "cpin",
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
   },
   {
-   "fieldname": "first_name",
+   "fieldname": "city",
    "fieldtype": "Data",
-   "label": "First Name",
+   "label": "City",
    "unique": 1
   },
   {
-   "depends_on": "eval:doc.first_name;\n",
-   "fieldname": "last_name",
+   "fieldname": "pin_code",
    "fieldtype": "Data",
-   "label": "Last Name",
-   "unique": 1
-  },
-  {
-   "fieldname": "phone_number",
-   "fieldtype": "Phone",
-   "in_list_view": 1,
-   "label": "Phone Number",
-   "reqd": 1
-  },
-  {
-   "fieldname": "full_name",
-   "fieldtype": "Data",
-   "label": "Full Name",
-   "read_only": 1
-  },
-  {
-   "fieldname": "date_time",
-   "fieldtype": "Datetime",
-   "label": "Date Time",
-   "read_only": 1
+   "label": "Pin Code"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-01-15 09:50:03.520595",
+ "modified": "2025-01-14 14:16:03.906978",
  "modified_by": "Administrator",
  "module": "Assignment_First",
- "name": "phones",
+ "name": "cpin",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
@@ -88,6 +64,6 @@
   }
  ],
  "sort_field": "modified",
- "sort_order": "ASC",
+ "sort_order": "DESC",
  "states": []
 }

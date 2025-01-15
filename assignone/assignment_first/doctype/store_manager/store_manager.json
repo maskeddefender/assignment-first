@@ -2,7 +2,7 @@
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
- "autoname": "field:first_name",
+ "autoname": "field:full_name",
  "creation": "2025-01-13 15:57:21.049769",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -12,6 +12,7 @@
   "amended_from",
   "first_name",
   "last_name",
+  "full_name",
   "department",
   "section_break_aool",
   "phone_number",
@@ -66,6 +67,7 @@
    "unique": 1
   },
   {
+   "fetch_from": "first_name.last_name",
    "fieldname": "last_name",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -104,13 +106,22 @@
    "fieldname": "item_detail_section",
    "fieldtype": "Section Break",
    "label": "Item Detail"
+  },
+  {
+   "fetch_from": "first_name.full_name",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "options": "phones",
+   "read_only": 1,
+   "unique": 1
   }
  ],
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-01-13 20:26:37.366429",
+ "modified": "2025-01-14 14:42:42.730243",
  "modified_by": "Administrator",
  "module": "Assignment_First",
  "name": "store manager",

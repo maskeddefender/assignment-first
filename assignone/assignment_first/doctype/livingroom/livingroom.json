@@ -49,19 +49,20 @@
   },
   {
    "fieldname": "state",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_list_view": 1,
    "label": "State",
+   "options": "cpin",
    "reqd": 1
   },
   {
    "fieldname": "country",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Country",
-   "reqd": 1
+   "label": "Country"
   },
   {
+   "fetch_from": "state.pin_code",
    "fieldname": "pin_code",
    "fieldtype": "Data",
    "label": "Pin Code",
@@ -71,7 +72,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-01-13 17:39:31.441744",
+ "modified": "2025-01-14 14:17:45.610952",
  "modified_by": "Administrator",
  "module": "Assignment_First",
  "name": "livingroom",
